@@ -1,0 +1,2 @@
+# popclip-gemini
+AI assistant
