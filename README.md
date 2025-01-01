@@ -1,2 +1,2 @@
 # popclip-gemini
-AI assistant
+A PopClip AI assistant extension , use Google Gemini.
