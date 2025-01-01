@@ -1,0 +1,32 @@
+name: AI assistant
+identifier: com.wzhpro.popclip.ai
+icon: iconify:material-symbols:person-raised-hand-rounded
+actions:
+  - title: Translate
+    icon: iconify:material-symbols:g-translate
+    capture html: false
+    stdin: test123
+    Shell Script File: translate.sh
+  - title: Explain
+    icon: iconify:material-symbols:unknown-document
+    capture html: false
+    after: show-result
+    Shell Script File: explain.sh
+  - title: Summary
+    icon: iconify:material-symbols:data-info-alert
+    capture html: false
+    after: show-result
+    Shell Script File: summary.sh
+description: Powered by GEMINI.
+options:
+  - identifier: GEMINI_API_KEY
+    label: GEMINI API KEY
+    type: secret
+  - identifier: LANGUAGE
+    label: Language
+    type: multiple
+    values:
+      - English
+      - Simplified Chinese
+      - French
+    default: English
